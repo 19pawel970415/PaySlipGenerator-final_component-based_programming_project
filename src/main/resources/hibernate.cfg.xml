@@ -14,11 +14,13 @@
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
 
-        <mapping class="employees."></mapping>
-        <mapping class="employees."></mapping>
-        <mapping class="employees."></mapping>
-        <mapping class="employees."></mapping>
-        <mapping class="employees."></mapping>
+        <mapping class="employees.Employee"></mapping>
+        <mapping class="employees.CppDeveloper"></mapping>
+        <mapping class="employees.CSharpDeveloper"></mapping>
+        <mapping class="employees.JavaDeveloper"></mapping>
+        <mapping class="employees.PythonDeveloper"></mapping>
+        <mapping class="employees.FrontEndDeveloper"></mapping>
+        <mapping class="employees.DatabaseAnalyst"></mapping>
 
     </session-factory>
 </hibernate-configuration>
