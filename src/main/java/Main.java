@@ -13,6 +13,8 @@ public class Main {
 
         paySlipGeneratorService.setDataInDb();
 
+        paySlipGeneratorService.generatePaySlipForEmployee("login9");
+
         sessionFactory.close();
     }
 

@@ -18,21 +18,29 @@ public class JavaDeveloper extends Employee {
     private Experience experience;
     private double baseSalary = 6000;
 
-    public JavaDeveloper(Long id, String name, String surName, String toolName, Experience experience) {
-        super(id, name, surName);
+    public JavaDeveloper(Long id, String name, String surname, String login, String password, String toolname, Experience experience) {
+        super(id, name, surname, login, password);
         this.toolName = toolName;
         this.experience = experience;
-        switch (experience) {
+        switch (this.experience) {
             case JUNIOR:
                 this.baseSalary = baseSalary;
+                break;
             case MID:
                 this.baseSalary = baseSalary * 1.5;
+                break;
             case SENIOR:
                 this.baseSalary = baseSalary * 2;
+                break;
             default:
                 this.baseSalary = baseSalary;
         }
     }
+
+    public JavaDeveloper() {
+        super(null, null, null, null, null);
+    }
+
 
     @Override
     public void generatePaySlip() {
